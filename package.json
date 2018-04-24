@@ -1,0 +1,25 @@
+{
+  "name": "Module_Three",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel ./Stoper/script.js --watch --out-file ./Stoper/script-compiled.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sythrill/Module_Three.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sythrill/Module_Three/issues"
+  },
+  "homepage": "https://github.com/Sythrill/Module_Three#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
+}
