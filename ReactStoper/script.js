@@ -7,7 +7,7 @@ class Stopwatch {
     }
 
     reset() {
-        if (!this.running) {
+        if (! this.running) {
             this.times = {
                 minutes: 0,
                 seconds: 0,
@@ -15,21 +15,22 @@ class Stopwatch {
             };
             this.print();
         }
+
     }
 
     add() {
-        if (!this.running) {
-            const ul = document.querySelector('.results');
-            const li = document.createElement('li');
+
+        if (! this.running) {
+            let ul = document.querySelector('.results');
+            let li = document.createElement('li');
             li.appendChild(document.createTextNode(this.format(this.times)));
             ul.appendChild(li);
         }
     }
 
     clear() {
-        const ul = document.querySelector('.results');
-        while(ul.firstChild)
-            ul.removeChild(ul.firstChild);
+        let ul = document.querySelector('.results');
+        ul.innerHTML = '';
     }
 
     format(times) {
